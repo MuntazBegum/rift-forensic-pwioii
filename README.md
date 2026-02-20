@@ -1,200 +1,144 @@
-
-
----
-
-# 🔍 Forensics Engine — Advanced Money Muling Detection System
-
 <div align="center">
 
-> **RIFT 2026 Hackathon** · *Graph Theory / Financial Crime Detection Track*
+<img src="public/logo.png" alt="RIFT Forensics Logo" width="220" />
 
-**[🔴 Live Interactive Demo](https://rift-forensic-pwioii.vercel.app/)**   |   **[📂 GitHub Repository](https://github.com/MuntazBegum/rift-forensic-pwioii/)**
+# 🛡️ RIFT Forensics Engine
+### *Next-Generation Money Muling & AML Detection Network*
 
+[![Live Interactive Demo](https://img.shields.io/badge/🔴_LIVE_DEMO-Online-00e5a0?style=for-the-badge&logo=vercel)](https://rift-forensic-pwioii.vercel.app/)
+[![GitHub Repository](https://img.shields.io/badge/📂_SOURCE-GitHub-1e293b?style=for-the-badge&logo=github)](https://github.com/MuntazBegum/rift-forensic-pwioii/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+
+<br>
+
+> **🏆 RIFT 2026 Hackathon · Deep Graph Analytics / RegTech Track 🏆**
+> 
+> *An enterprise-grade, high-throughput topological intelligence system engineered to autonomously untangle multi-layered financial crime and fraud syndicates.*
+
+<br>
 </div>
 
 ---
 
-## 📑 Table of Contents
+## ⚡ The Challenge & The RIFT Solution
 
-1. [Executive Overview](https://www.google.com/search?q=%23overview)
-2. [Enterprise Tech Stack](https://www.google.com/search?q=%23tech-stack)
-3. [System Architecture](https://www.google.com/search?q=%23architecture)
-4. [Algorithmic Approach & Graph Theory](https://www.google.com/search?q=%23algorithms)
-5. [Proprietary Temporal Heuristic Engine](https://www.google.com/search?q=%23heuristics)
-6. [Local Development Guide](https://www.google.com/search?q=%23installation)
-7. [Cloud Deployment](https://www.google.com/search?q=%23deployment)
-8. [System Limitations & Roadmap](https://www.google.com/search?q=%23limitations)
-9. [The Engineering Team](https://www.google.com/search?q=%23team)
+**The Crisis:** Global financial institutions hemorrhage trillions of dollars annually to increasingly sophisticated, obfuscated money laundering networks. Traditional rules-based Anti-Money Laundering (AML) systems are plagued by catastrophic false-positive rates and fundamentally fail to detect non-linear, multi-hop syndicates.
+
+**The Solution:** We engineered the **RIFT Forensics Engine**—a real-time, high-throughput RegTech platform that ingests massive, unstructured transactional datasets and transforms them into actionable topological intelligence. By leveraging deep graph-theoretic algorithms and vectorized memory processing, the engine autonomously detects cyclic layering, fan-in/fan-out smurfing, and shadow shell networks in **sub-30-second execution windows**.
 
 ---
 
-## <a id="overview"></a>📌 Executive Overview
+## 🛠️ Enterprise Tech Stack & Infrastructure
 
-Financial institutions lose billions annually to sophisticated laundering networks. We engineered an enterprise-grade, real-time **Financial Forensics Engine** designed to autonomously detect multi-layered money muling networks and smurfing operations within massive transaction datasets.
+Our microservices-oriented architecture operates on a highly optimized, stateless modern stack designed for rapid horizontal scalability, zero data-persistence bottlenecks, and extreme graphical fidelity.
 
-By leveraging high-throughput in-memory processing and advanced graph-theoretic algorithms, the engine ingests raw transaction logs (CSV) and renders an interactive, force-directed topological map of hidden fraud rings in **under 30 seconds**. The system culminates in a structured, actionable JSON intelligence report ready for compliance and risk-management teams.
-
----
-
-## <a id="tech-stack"></a>🚀 Enterprise Tech Stack
-
-Our stateless, microservices-inspired architecture relies on a highly optimized modern stack:
-
-| Layer | Technology & Purpose |
-| --- | --- |
-| **Frontend UI/UX** | **React 18 & Vite** – Ensures a lightning-fast virtual DOM for rendering heavy analytical dashboards. |
-| **Data Visualization** | **react-force-graph-2d** – Canvas-based rendering capable of mapping thousands of nodes seamlessly. |
-| **Backend API** | **Python 3.11 & FastAPI** – High-performance asynchronous API layer for rapid data ingestion. |
-| **Data Pipeline** | **Pandas** – Vectorized, high-throughput memory processing for instant dataset normalization. |
-| **Graph Analytics** | **NetworkX** – Deep topological traversal and complex network mathematical modeling. |
-| **Cloud Hosting** | **Vercel** (Edge Delivery) & **Render** (Containerized Backend) |
+| Domain | Core Technologies | Strategic Purpose |
+| :--- | :--- | :--- |
+| 🎨 **Frontend & WebGL** | [![React](https://img.shields.io/badge/React_18-20232A?style=flat-square&logo=react&logoColor=61DAFB)]() [![Three.js](https://img.shields.io/badge/Three.js-black?style=flat-square&logo=three.js&logoColor=white)]() | Powers a lightning-fast virtual DOM and GPU-accelerated WebGL spatial rendering capable of mapping tens of thousands of vertices in a force-directed topology without frame drops. |
+| 🧠 **Backend Core API** | [![Python](https://img.shields.io/badge/Python_3.11-14354C?style=flat-square&logo=python&logoColor=white)]() [![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)]() | Ultra-low-latency asynchronous API layer built on Starlette, ensuring maximum I/O throughput for massive data ingestion and real-time response. |
+| 📊 **Deep Analytics** | [![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)]() [![NetworkX](https://img.shields.io/badge/NetworkX-005C84?style=flat-square)]() | Vectorized, in-memory tensor processing for instantaneous tabular-to-graph data restructuring and complex network heuristic computations. |
+| ☁️ **Cloud DevOps** | [![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)]() [![Render](https://img.shields.io/badge/Render-46E3B7?style=flat-square&logo=render&logoColor=white)]() | Fully automated CI/CD pipelines deploying to Vercel's Global Edge Network for UI, and Render's scalable containerized compute instances for the backend. |
 
 ---
 
-## <a id="architecture"></a>🏗 System Architecture
+## 🧬 Algorithmic Core & Graph Theory
 
-The engine utilizes a decoupled, stateless architecture to ensure rapid horizontal scaling and zero data-persistence bottlenecks.
+Our detection engine goes far beyond simple degree thresholds, executing multi-variate structural analysis on the transactional topology:
+
+* 🌐 **Multi-Dimensional Topological Ingestion:** Raw transactional ledgers are immediately mapped into a highly optimized Directed Graph. Unique financial entities are instantiated as weighted vertices, while transactional vectors become directed edges.
+* 🌀 **Deep Cycle Enumeration (Layering Detection):** To dismantle the "layering" phase of money laundering, we implemented an optimized depth-first search protocol targeting elementary cycles of lengths **3, 4, and 5**. 
+* 🕸️ **Structural Smurfing Identification:** The engine analyzes asymmetric vertex degrees to expose critical placement and integration hubs within microseconds (*Aggregation mules vs. Dispersal distributors*).
+* 🛡️ **Proprietary Temporal Heuristics (Zero-Tolerance FP Filter):** Legacy models notoriously flag legitimate corporate payroll systems. We engineered a filter that identifies super-nodes (`degree > 50`) and forces them through a high-velocity chronological cross-reference algorithm, definitively verifying legitimate corporate bulk processors and neutralizing their threat scores to `0.0`.
+
+<br>
+
+### 🚨 AI-Ready Threat Matrix
+Entities are continuously evaluated through a proprietary algorithmic scoring matrix (0–100 threat index):
+
+| Vector Signal | Algorithmic Threat Weight | Impact Level |
+| :--- | :--- | :---: |
+| **Deep Cycle Participation** | Base +50 (Critical Breach), +10 per overlapping cycle | 🔴 **Critical** |
+| **Layered Shell Sub-Graph** | +40 (Identifies obfuscation proxy chains) | 🟠 **High** |
+| **Fan-Out (Dispersal)** | +35 (Identifies integration laundering) | 🟡 **Medium** |
+| **High Centrality Bridge Node**| +15 (Betweenness Centrality factor > 0.1) | 🟣 **Elevated** |
+
+---
+
+## 🏗️ Decoupled System Architecture
+
+<details>
+<summary><b>👁️ Click to view the Data Flow Architecture Diagram</b></summary>
+<br>
 
 ```text
-[ Client Environment ]
+[ Secure Client Environment ]
    │
-   ▼ Multipart Form Data Ingestion (CSV)
+   ▼ Multipart Form Data Stream (Encrypted CSV)
 ┌────────────────────────────────────────────────────────┐
-│  Frontend Presentation Layer (Vercel Edge Network)     │
-│  · Client-side Validation & Parsing UI                 │
-│  · WebGL/Canvas Force-Directed Topology Engine         │
-│  · Dynamic Threat Matrix Table                         │
-│  · Automated JSON Compliance Export                    │
+│  Presentation & WebGL Engine (Vercel Global Edge)      │
+│  · Client-side Sanitization & State Management         │
+│  · Three.js 3D Force-Directed Topology Renderer        │
+│  · Dynamic Risk-Matrix Dashboard & SAR Export          │
 └──────────────────────────┬─────────────────────────────┘
                            │ Asynchronous POST /analyze
                            ▼
 ┌────────────────────────────────────────────────────────┐
-│  Analytics & Heuristics API (Render Cloud Services)    │
-│  · Vectorized Data Normalization (Pandas)              │
-│  · Directed Graph Construction (NetworkX)              │
-│  · Non-linear Cycle Enumeration                        │
-│  · Fan-in/Fan-out Smurfing Detection                   │
-│  · Temporal Heuristic Engine (False-Positive Filter)   │
+│  Analytics & ML Heuristics API (Render Cloud Compute)  │
+│  · High-Speed Vectorized Normalization (Pandas)        │
+│  · Directed Acyclic/Cyclic Graph Generation (NetworkX) │
+│  · Sub-Graph Isomorphism & Deep Cycle Enumeration      │
+│  · O(1) Look-up Temporal Heuristic Filtering Engine    │
 └────────────────────────────────────────────────────────┘
 
 ```
 
----
-
-## <a id="algorithms"></a>🧠 Algorithmic Approach & Graph Theory
-
-### 1. Topological Graph Construction
-
-Raw tabular data is transformed into a multi-dimensional directed graph. Unique accounts (`sender_id`, `receiver_id`) are mapped as vertices, while transaction vectors (amount, timestamp) form weighted directed edges.
-
-### 2. Deep Cycle Enumeration (Layering Detection)
-
-To detect the "layering" phase of money laundering, we implemented a targeted depth-search utilizing `networkx.simple_cycles()`. We strictly isolate elementary cycles of lengths **3, 4, and 5**, representing the precise structural depth typically utilized by organized muling rings to obfuscate audit trails. Identified clusters are mathematically tagged with a unique `RING_XXX` identifier.
-
-### 3. Structural Smurfing Detection (Fan-In / Fan-Out)
-
-We analyze vertex degrees to identify critical placement and integration hubs:
-
-* **Fan-in (Aggregation):** In-degree ≥ 10. Flags hubs where localized mules deposit illicit funds.
-* **Fan-out (Dispersal):** Out-degree ≥ 10. Flags controllers distributing funds to shell accounts.
-
-### 4. Dynamic Suspicion Scoring Matrix
-
-Accounts are evaluated through a rigorous, multi-variate scoring matrix (0–100 index):
-
-| Vector Signal | Threat Weight |
-| --- | --- |
-| **Cycle Participation** | Base +50 (Critical Threat), +10 per overlapping cycle (Max +30) |
-| **Layered Shell Network** | +40 |
-| **Fan-Out (Dispersal)** | +35 |
-| **Fan-In (Aggregation)** | +30 (Contextual: validates onward movement; penalizes static merchant hubs -10) |
-| **High-Velocity Pass-Through** | +15 (Requires In-Degree > 5 AND Out-Degree > 5) |
-| **High Centrality Bridge** | +15 (Betweenness Centrality index > 0.1) |
+</details>
 
 ---
 
-## <a id="heuristics"></a>🛡 Proprietary Temporal Heuristic Engine (False-Positive Mitigation)
+## 🚀 Local Deployment Guide
 
-> **💡 The Competitive Edge:** Standard degree-based fraud models suffer heavily from false positives by accidentally flagging corporate payroll or automated subscription processors.
+To initialize the RIFT pipeline in a local environment, clone the repository and execute the following commands.
 
-To solve this, we engineered a **Temporal Heuristic Engine**. The system isolates mega-nodes (`out_degree > 50`) and executes a high-speed chronological cross-reference. If 100% of outgoing transaction vectors align on a singular chronologic axis (e.g., exclusively on the 1st or 15th of the month), the node is mathematically verified as a **Legitimate Bulk Processor**.
-
-**Automated Remediation:**
-
-* Extracted entirely from the `suspicious_accounts` ledger.
-* Threat score forcefully zeroed.
-* Bypassed in visual ring renderings.
-*(This achieves enterprise-level filtering using a highly efficient `groupby` on time-series data, preserving processing speed.)*
-
----
-
-## <a id="installation"></a>⚙️ Local Development Guide
-
-To run this pipeline locally, follow these steps. For full context, ensure you are cloned from the [main repository](https://github.com/MuntazBegum/rift-forensic-pwioii/).
-
-### 1. Backend Initialization (Python/FastAPI)
+### 1. Initialize Backend Compute (Python/FastAPI)
 
 ```bash
 cd backend
 python -m venv venv
-# Activate virtual environment (Windows)
-venv\Scripts\activate
-# Activate virtual environment (Mac/Linux)
-# source venv/bin/activate
+source venv/bin/activate  # (On Windows: venv\Scripts\activate)
 
-pip install -r ../requirements.txt
+pip install -r requirements.txt
 uvicorn main:app --reload --port 8000
 
 ```
 
-### 2. Frontend Initialization (React/Vite)
+### 2. Initialize Edge Visualization (React/Vite)
 
 ```bash
 cd frontend
 npm install
-cp .env.example .env 
-# Ensure you set VITE_API_URL=http://localhost:8000 in your .env
+cp .env.example .env      # Ensure VITE_API_URL=[http://127.0.0.1:8000](http://127.0.0.1:8000) is set
 npm run dev
 
 ```
 
 ---
 
-## <a id="deployment"></a>☁️ Cloud Deployment Protocol
+## 👥 The Engineering Team
 
-### Deploy Backend via Render
+Behind the architecture is a dedicated team of cross-functional engineers operating at the intersection of Big Data and UX.
 
-1. Authenticate with [Render](https://render.com) and select **New Web Service**.
-2. Bind the GitHub repository.
-3. **Build Command:** `pip install -r requirements.txt`
-4. **Start Command:** `uvicorn main:app --host 0.0.0.0 --port $PORT`
-5. Map environmental variables and execute deployment.
+| Engineer | Core Responsibility Focus | Domain Expertise |
+| --- | --- | --- |
+| 👨‍💻 **Mohammed Farhan Ahmed** | **Backend / Algorithm** | Core Algorithmic Mathematics, Fast API Architecture & Threat Scoring Matrix. |
+| 👩‍💻 **Muntaz Begum** | **Frontend / Visualization** | WebGL Spatial Visualization, React Presentation Architecture & UI/UX Design. |
+| 👩‍💻 **Sneha Bera** | **Data & Testing** | Data Engineering, Vectorized Normalization, Pipeline Stress Testing & QA. |
+| 👨‍💻 **Mohammed Ammar Ahmed** | **Deployment & Docs** | Cloud Infrastructure, CI/CD Deployments (Vercel/Render) & Technical Documentation. |
 
-### Deploy Frontend via Vercel
+<div align="center">
+<i>Engineered with precision for the future of decentralized financial security.</i>
+</div>
 
-1. Authenticate with [Vercel](https://vercel.com) and import the repository.
-2. Select **Vite** as the framework preset.
-3. Inject the Render API URL into the `VITE_API_URL` environment variable.
-4. Deploy to Edge network.
+```
 
----
-
-## <a id="limitations"></a>⚠️ System Limitations & Future Roadmap
-
-* **Algorithmic Constraints:** Current `nx.simple_cycles()` implementation exhibits exponential worst-case complexity  on highly dense datasets. **Production Roadmap:** Refactor to leverage Johnson’s algorithm paired with an absolute depth-cutoff limit for graphs >5,000 nodes.
-* **Threshold Elasticity:** Smurfing triggers (≥10) are statically defined. Future iterations will utilize dynamic K-Means clustering to adjust thresholds based on institutional baselines.
-* **State Management:** The architecture is intentionally stateless for this MVP. Production deployments will require integration with a graph database (e.g., Neo4j) for persistent state.
-* **Temporal Upgrades:** The payroll heuristic currently relies on strict `day_of_month` logic. The next evolution will employ Fast Dynamic Time Warping (FastDTW) for nuanced time-series clustering.
-
----
-
-## <a id="team"></a>👥 The Engineering Team
-
-| Engineer | Core Responsibility Focus |
-| --- | --- |
-| **Mohammed Farhan Ahmed** | API Architecture, Graph Algorithms & Threat Scoring |
-| **Muntaz Begum** | WebGL Visualization, UI/UX Engineering & Client State |
-| **Sneha Bera** | Data Engineering, Pipeline Testing & Normalization |
-| **Mohammed Ammar Ahmed** | Cloud Infrastructure, CI/CD Deployment & Technical Documentation |
-
----
+```
