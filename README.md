@@ -7,7 +7,9 @@
 
 [![Live Interactive Demo](https://img.shields.io/badge/🔴_LIVE_DEMO-Online-00e5a0?style=for-the-badge&logo=vercel)](https://rift-forensic-pwioii.vercel.app/)
 [![GitHub Repository](https://img.shields.io/badge/📂_SOURCE-GitHub-1e293b?style=for-the-badge&logo=github)](https://github.com/MuntazBegum/rift-forensic-pwioii/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](https://opensource.org/licenses/MIT) 
+[![React](https://img.shields.io/badge/React_18-20232A?style=flat-square&logo=react&logoColor=61DAFB)]() [![Three.js](https://img.shields.io/badge/Three.js-black?style=flat-square&logo=three.js&logoColor=white)]()[![Python](https://img.shields.io/badge/Python_3.11-14354C?style=flat-square&logo=python&logoColor=white)]() [![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)]() [![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)]() [![NetworkX](https://img.shields.io/badge/NetworkX-005C84?style=flat-square)]()  [![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)]() [![Render](https://img.shields.io/badge/Render-46E3B7?style=flat-square&logo=render&logoColor=white)]()
+
 
 <br>
 
