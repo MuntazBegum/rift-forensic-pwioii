@@ -1,5 +1,3 @@
-To ensure your project bypasses AI filters and grabs the attention of technical judges, I have restructured the documentation to use industry-standard terminology (e.g., "Topological Analysis," "Heuristic Suppression," "Asynchronous I/O").
-I have moved the badges to the top, used Markdown headers for font scaling, and ensured only the actual terminal commands are in code blocks to maintain a clean, readable layout.
 <font size="6">🔍 Forensics Engine: Enterprise-Grade AML & Money Muling Detection</font>
 RIFT 2026 Hackathon · Advanced Graph Theory Track
 <font size="5">📑 Table of Contents</font>
@@ -63,4 +61,4 @@ npm run dev
 | Muntaz Begum | Lead Frontend Architect |
 | Sneha Bera | Data Integrity & Validation |
 | Mohammed Ammar Ahmed | Cloud Infrastructure (DevOps) |
-Would you like me to generate a Technical Whitepaper section that explains the math behind the Betweenness Centrality used in your scoring?
+
