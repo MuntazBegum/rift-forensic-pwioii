@@ -1,0 +1,9 @@
+backend/
+frontend/
+venv/
+__pycache__/
+*.py
+*.pyc
+test_upload.csv
+.env
+.env.example

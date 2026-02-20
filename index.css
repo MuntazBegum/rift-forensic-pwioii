@@ -1,0 +1,180 @@
+:root {
+  font-family: 'IBM Plex Mono', monospace;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* CSS custom properties — set by React theme toggle */
+  --tooltip-bg: #0f172a;
+  --tooltip-text: #e2e8f0;
+  --tooltip-border: #1e293b;
+  --scrollbar-track: #050b14;
+  --scrollbar-thumb: #1e293b;
+  --scrollbar-hover: #334155;
+  --popup-bg: #0f172a;
+  --popup-text: #94a3b8;
+  --popup-border: #1e293b;
+  --accent: #00d4ff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  transition: background-color 0.3s ease;
+}
+
+#root {
+  width: 100%;
+}
+
+/* Smooth theme transition on outer shell */
+#root>div {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Sidebar Tab Tooltip */
+.nav-tooltip {
+  position: absolute;
+  left: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--tooltip-bg);
+  color: var(--tooltip-text);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s, left 0.15s;
+  border: 1px solid var(--tooltip-border);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  z-index: 200;
+}
+
+.nav-tooltip::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent var(--tooltip-border) transparent transparent;
+}
+
+div:hover>.nav-tooltip {
+  opacity: 1;
+  left: 64px;
+}
+
+/* Custom range slider for timeline */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  background: var(--scrollbar-thumb);
+  border-radius: 4px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
+  border: 2px solid var(--scrollbar-track);
+  box-shadow: 0 0 8px rgba(0, 212, 255, 0.3);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
+  border: 2px solid var(--scrollbar-track);
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-hover);
+}
+
+/* Chart Info Tooltip Popup */
+.chart-info-popup {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%) translateY(-4px);
+  width: 260px;
+  background: var(--popup-bg);
+  color: var(--popup-text);
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 11px;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  border: 1px solid var(--popup-border);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  z-index: 300;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+  white-space: normal;
+}
+
+.chart-info-popup::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0 5px 5px 5px;
+  border-style: solid;
+  border-color: transparent transparent var(--popup-border) transparent;
+}
+
+.chart-info-trigger:hover>.chart-info-popup {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.chart-info-trigger:hover>span:first-child {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Spin animation for loading */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

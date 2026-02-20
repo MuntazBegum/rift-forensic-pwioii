@@ -1,0 +1,25 @@
+{
+  "name": "forensics-engine",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "backend": "cd backend && venv\\Scripts\\python -m uvicorn main:app --reload --port 8000",
+    "start": "concurrently \"npm run dev\" \"npm run backend\"",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-force-graph-2d": "^1.25.5",
+    "react-force-graph-3d": "^1.29.1",
+    "three": "^0.183.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "concurrently": "^9.2.1",
+    "vite": "^5.2.0"
+  }
+}
