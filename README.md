@@ -57,24 +57,24 @@ The engine utilizes a decoupled, stateless architecture to ensure rapid horizont
 
 ```text
 [ Client Environment ]
-    │
-    ▼ Multipart Form Data Ingestion (CSV)
+   │
+   ▼ Multipart Form Data Ingestion (CSV)
 ┌────────────────────────────────────────────────────────┐
-│  Frontend Presentation Layer (Vercel Edge Network)     │
-│  · Client-side Validation & Parsing UI                 │
-│  · WebGL/Canvas Force-Directed Topology Engine         │
-│  · Dynamic Threat Matrix Table                         │
-│  · Automated JSON Compliance Export                    │
+│  Frontend Presentation Layer (Vercel Edge Network)     │
+│  · Client-side Validation & Parsing UI                 │
+│  · WebGL/Canvas Force-Directed Topology Engine         │
+│  · Dynamic Threat Matrix Table                         │
+│  · Automated JSON Compliance Export                    │
 └──────────────────────────┬─────────────────────────────┘
-                           │ Asynchronous POST /analyze
-                           ▼
+                           │ Asynchronous POST /analyze
+                           ▼
 ┌────────────────────────────────────────────────────────┐
-│  Analytics & Heuristics API (Render Cloud Services)    │
-│  · Vectorized Data Normalization (Pandas)              │
-│  · Directed Graph Construction (NetworkX)              │
-│  · Non-linear Cycle Enumeration                        │
-│  · Fan-in/Fan-out Smurfing Detection                   │
-│  · Temporal Heuristic Engine (False-Positive Filter)   │
+│  Analytics & Heuristics API (Render Cloud Services)    │
+│  · Vectorized Data Normalization (Pandas)              │
+│  · Directed Graph Construction (NetworkX)              │
+│  · Non-linear Cycle Enumeration                        │
+│  · Fan-in/Fan-out Smurfing Detection                   │
+│  · Temporal Heuristic Engine (False-Positive Filter)   │
 └────────────────────────────────────────────────────────┘
 
 ```
@@ -198,5 +198,3 @@ npm run dev
 | **Mohammed Ammar Ahmed** | Cloud Infrastructure, CI/CD Deployment & Technical Documentation |
 
 ---
-
-
