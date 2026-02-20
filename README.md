@@ -2,8 +2,8 @@
 
 > **RIFT 2026 Hackathon** · Graph Theory / Financial Crime Detection Track
 
-**Live Demo:** `https://your-app.vercel.app`  
-**GitHub:** `https://github.com/your-team/forensics-engine`
+**Live Demo:** `https://rift-forensic-pwioii.vercel.app/`  
+**GitHub:** `https://github.com/MuntazBegum/rift-forensic-pwioii/`
 
 ---
 
@@ -148,12 +148,11 @@ npm run dev
 
 | Name | Role |
 |---|---|
-| Member 1 | Backend / Algorithm |
-| Member 2 | Frontend / Visualization |
-| Member 3 | Data & Testing |
-| Member 4 | Deployment & Docs |
+| Mohammed Farhan Ahmed | Backend / Algorithm |
+| Muntaz Begum | Frontend / Visualization |
+| Sneha Bera | Data & Testing |
+| Mohammed Ammar Ahmed | Deployment & Docs |
 
 ---
 
-## 📄 License
-MIT
+
